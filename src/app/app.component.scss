@@ -1,0 +1,74 @@
+.let-container {
+    display: flex;
+    height: 100%;
+}
+
+.spacing-container {
+    margin-bottom: 20px;
+}
+
+.let-container.let-container-centerall {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.let-container.let-container-main {
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 30px;
+}
+
+.let-title {
+    font-size: 3.5em;
+    font-weight: 100;
+    color: #303030;
+}
+
+.let-example {
+    display: flex;
+}
+
+.preview img {
+    width: 100%;
+}
+
+.progress-container {
+    position: relative;
+}
+
+.upload-progress {
+    height: 32px;
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+progress[value]::-webkit-progress-bar {
+    background-color: #eee;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+
+button {
+    background: #FDFDFD;
+    border: 1px solid #2c2c2c;
+    padding: 8px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+    margin-bottom: 4px;
+}
+
+button:disabled {
+    background: #eee;
+    cursor: not-allowed;
+}
+
+.let-hero {
+    background-color: #ffffff;
+    border-bottom: 1px solid #E0E0E0;
+    height: 400px;
+}
