@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import { AngularFireStorage } from 'angularfire2/storage';
-import { AngularFireModule } from '../../node_modules/@angular/fire';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -13,13 +13,12 @@ import { AngularFireModule } from '../../node_modules/@angular/fire';
     BrowserModule,
     AngularFireModule.initializeApp({
       apiKey: "AIzaSyBXGUAREAYEc7Z833QjaeOCd7HxACIY99M",
-    authDomain: "prueba-3d2d5.firebaseapp.com",
-    databaseURL: "https://prueba-3d2d5.firebaseio.com",
-    projectId: "prueba-3d2d5",
-    storageBucket: "",
-    messagingSenderId: "29557385502"
+  authDomain: "prueba-3d2d5.firebaseapp.com",
+  databaseURL: "https://prueba-3d2d5.firebaseio.com",
+  projectId: "prueba-3d2d5",
+  storageBucket: "prueba-3d2d5.appspot.com",
     }),
-    AngularFireStorage 
+    AngularFireStorageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
